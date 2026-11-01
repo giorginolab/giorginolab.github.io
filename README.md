@@ -6,13 +6,14 @@ theme, published on GitHub Pages at <https://tonigi.github.io/prova1/>.
 
 ## Editing
 
-| What             | Where                                                       |
-| ---------------- | ----------------------------------------------------------- |
-| Pages (navbar)   | `_pages/*.md` (`nav: true`, `nav_order`)                    |
-| Blog posts       | `_posts/YYYY-MM-DD-title.md`                                |
-| Publication list | `_bibliography/*.bib`, rendered by `_pages/publications.md` |
-| Site settings    | `_config.yml`                                               |
-| Images           | `assets/img/`                                               |
+| What                  | Where                                                       |
+| --------------------- | ----------------------------------------------------------- |
+| Pages (navbar)        | `_pages/*.md` (`nav: true`, `nav_order`)                    |
+| Blog posts            | `_posts/YYYY-MM-DD-title.md`                                |
+| Publication list      | `_bibliography/*.bib`, rendered by `_pages/publications.md` |
+| Site settings         | `_config.yml`                                               |
+| Look (fonts, colours) | `_sass/_giorginolab.scss`                                   |
+| Images                | `assets/img/`                                               |
 
 Push to `master`: the single workflow `.github/workflows/deploy.yml` builds the
 site and pushes it to the `gh-pages` branch (Settings → Pages → Deploy from a

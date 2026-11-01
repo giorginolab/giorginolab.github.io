@@ -188,9 +188,7 @@
     {% assign periodical = periodical | strip %}
     {% if periodical != "" %}<span class="periodical">{{ periodical }}.</span>{% endif %}
     </div>
-    {% if entry.note %}
-    <div class="periodical note">{{ entry.note | strip }}</div>
-    {% endif %}
+    {%- comment -%} The BibTeX "note" field is ignored: it only holds reference-manager noise (WOS/Scopus IDs, citation counts). {%- endcomment -%}
 
     <!-- Links/Buttons -->
     <div class="links">

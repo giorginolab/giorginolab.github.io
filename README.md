@@ -20,12 +20,8 @@ site and publishes it with GitHub Pages (Settings → Pages → Source: GitHub A
 
 ## Local preview
 
-```bash
-docker compose up        # http://localhost:8080
-```
-
-or, with Ruby 3.3:
+With Ruby 3.3:
 
 ```bash
-bundle install && bundle exec jekyll serve
+bundle install && bundle exec jekyll serve   # http://localhost:4000/prova1/
 ```

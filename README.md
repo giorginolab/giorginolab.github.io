@@ -15,7 +15,7 @@ theme, published on GitHub Pages at <https://tonigi.github.io/prova1/>.
 | Look (fonts, colours) | `_sass/_giorginolab.scss`                                   |
 | Images                | `assets/img/`                                               |
 
-Push to `master`: the single workflow `.github/workflows/deploy.yml` builds the
+Push to `main`: the single workflow `.github/workflows/deploy.yml` builds the
 site and pushes it to the `gh-pages` branch (Settings → Pages → Deploy from a
 branch → `gh-pages`).
 

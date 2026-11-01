@@ -10,5 +10,5 @@ The lab website has moved to a static site generated with [Jekyll](https://jekyl
 (al-folio theme) and hosted on GitHub Pages.
 
 To publish a new post, add a Markdown file named `YYYY-MM-DD-title.md` to the `_posts/`
-folder and push to `master`. The publication list is generated automatically from the
+folder and push to `main`. The publication list is generated automatically from the
 BibTeX files in `_bibliography/`.

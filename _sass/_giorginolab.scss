@@ -42,6 +42,7 @@ article h2,
 article h3 {
   font-size: 1rem;
   font-weight: 900;
+  margin-top: 1.75rem;
 }
 
 // Links: dark, bold, underlined
@@ -58,6 +59,16 @@ article a,
 article ul li::marker {
   content: "▪  ";
   font-size: 0.8em;
+}
+
+// nested lists (e.g. software descriptions): hollow bullet, no extra gap
+article ul ul {
+  margin-top: 0.15rem;
+  margin-bottom: 0.6rem;
+  li::marker {
+    content: "◦  ";
+    font-size: 1em;
+  }
 }
 
 // Profile photo on the home page: small, square, with a small caption

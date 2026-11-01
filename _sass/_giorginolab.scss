@@ -1,23 +1,55 @@
-// GiorginoLab look (mirrors the Google Sites version of www.giorginolab.it):
-// Inter text, green accents, left sidebar navigation, centred titles.
+// GiorginoLab look: Inter text, deep-green accents, warm off-white surfaces,
+// sticky top navigation with pill links, left-aligned titles, automatic dark mode.
 // Everything site-specific lives in this file; al-folio partials stay untouched.
 
-$gl-green: #617e4d;
-$gl-text: #212121;
-$gl-sidebar-width: 250px;
 $gl-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
 :root {
-  --global-theme-color: #{$gl-green};
-  --global-hover-color: #{$gl-green};
-  --global-text-color: #{$gl-text};
+  --gl-accent: #2f6b57;
+  --gl-accent-soft: #e4efe9;
+  --gl-highlight: #c9772c;
+  --gl-surface: #ffffff;
+  --gl-line: #e4e8e2;
+  --gl-muted: #5d6b63;
+
+  --global-bg-color: #fbfbf8;
+  --global-text-color: #1d2621;
+  --global-text-color-light: var(--gl-muted);
+  --global-theme-color: var(--gl-accent);
+  --global-hover-color: var(--gl-accent);
+  --global-hover-text-color: #ffffff;
+  --global-divider-color: var(--gl-line);
+  --global-card-bg-color: var(--gl-surface);
+  --global-code-bg-color: #f1f3ee;
+  --global-highlight-color: var(--gl-highlight);
+}
+
+html[data-theme="dark"] {
+  --gl-accent: #6fcaa3;
+  --gl-accent-soft: #1d2e26;
+  --gl-highlight: #e7a15e;
+  --gl-surface: #18201c;
+  --gl-line: #27332d;
+  --gl-muted: #98a89e;
+
+  --global-bg-color: #0f1512;
+  --global-text-color: #e8eee9;
+  --global-text-color-light: var(--gl-muted);
+  --global-theme-color: var(--gl-accent);
+  --global-hover-color: var(--gl-accent);
+  --global-hover-text-color: #0f1512;
+  --global-divider-color: var(--gl-line);
+  --global-card-bg-color: var(--gl-surface);
+  --global-code-bg-color: #18201c;
+  --global-highlight-color: var(--gl-highlight);
 }
 
 body {
   font-family: $gl-sans;
   font-size: 1rem;
-  line-height: 1.6;
-  color: $gl-text;
+  line-height: 1.65;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
 }
 
 h1,
@@ -27,190 +59,196 @@ h4,
 h5,
 h6 {
   font-family: $gl-sans;
-  color: $gl-green;
+  color: var(--global-text-color);
 }
 
-// Section headings inside content: small, bold, green (like "Research interests")
+// Content column: comfortable reading width, left aligned
+.container {
+  max-width: 960px;
+}
+
+// Section headings inside content
 article h2,
 .post article h2 {
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  margin-top: 2.25rem;
+  color: var(--gl-accent);
 }
 
 article h3 {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   margin-top: 1.75rem;
 }
 
-// Links: dark, bold, underlined
+// Links: accent colour, thin offset underline
 article a,
 .post a:not(.btn):not(.post-title):not(.nav-link):not(.abstract):not(.bibtex) {
-  color: $gl-text;
+  color: var(--gl-accent);
   font-weight: 500;
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
   &:hover {
-    color: $gl-green;
+    color: var(--global-text-color);
   }
 }
 
 article ul li::marker {
-  content: "▪  ";
-  font-size: 0.8em;
+  color: var(--gl-accent);
 }
 
-// nested lists (e.g. software descriptions): hollow bullet, no extra gap
+// nested lists (e.g. software descriptions): no extra gap
 article ul ul {
   margin-top: 0.15rem;
   margin-bottom: 0.6rem;
-  li::marker {
-    content: "◦  ";
-    font-size: 1em;
-  }
 }
 
-// Profile photo on the home page: small, square, with a small caption
+// Profile photo on the home page: rounded card-like image with a small caption
 .profile {
-  width: 160px;
+  width: 200px;
   img {
-    border-radius: 0;
+    border-radius: 20px;
     box-shadow: none;
+    border: 1px solid var(--gl-line);
   }
   .more-info {
-    font-size: 0.75rem;
-    text-align: center;
+    font-size: 0.78rem;
+    text-align: left;
+    color: var(--gl-muted);
+    margin-top: 0.4rem;
   }
 }
 
-// Page title: centred, bold, green, with a short bar underneath
+// Page title: left aligned, large, tight, with a short accent bar
 .post-header {
-  text-align: center;
-  margin-bottom: 1.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
 
   .post-title {
-    font-size: 3rem;
+    font-size: 2.75rem;
     font-weight: 700;
-    letter-spacing: -0.03em;
-    color: $gl-green;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    color: var(--global-text-color);
     &::after {
       content: "";
       display: block;
-      width: 100px;
-      height: 6px;
-      margin: 0.75rem auto 0;
-      background: $gl-green;
+      width: 56px;
+      height: 4px;
+      border-radius: 2px;
+      margin: 0.9rem 0 0;
+      background: var(--gl-accent);
     }
   }
 
   .desc,
   .post-description {
-    margin-top: 1.25rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: $gl-green;
+    margin-top: 1rem;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--gl-muted);
   }
 }
 
-// Publications: year headers and author highlight in green
+// Publications: year headers and author highlight in accent colour
 .publications {
   h2.bibliography {
-    color: $gl-green;
-    font-weight: 600;
+    color: var(--gl-accent);
+    font-weight: 650;
   }
   ol.bibliography li .author em {
-    color: $gl-green;
-    border-bottom-color: $gl-green;
+    color: var(--gl-accent);
+    border-bottom-color: var(--gl-accent);
   }
   .title {
-    font-weight: 700;
+    font-weight: 600;
   }
   .links a.btn {
     font-family: $gl-sans;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
+    border-radius: 999px;
+    border: 1px solid var(--gl-line);
+    background: var(--gl-surface);
+    color: var(--global-text-color);
+    padding: 0 0.8rem;
+    &:hover {
+      background: var(--gl-accent);
+      border-color: var(--gl-accent);
+      color: var(--global-hover-text-color);
+    }
   }
 }
 
 // ---------------------------------------------------------------------------
-// Navigation: fixed left sidebar on wide screens, top bar + hamburger on mobile
+// Navigation: sticky top bar with pill links (hamburger on mobile)
 // ---------------------------------------------------------------------------
 
 #navbar {
   font-family: $gl-sans;
-  background: #fff;
+  background: color-mix(in srgb, var(--global-bg-color) 88%, transparent);
+  backdrop-filter: saturate(1.4) blur(10px);
+  border-bottom: 1px solid var(--gl-line);
+  box-shadow: none;
+  min-height: 64px;
+  padding-top: 0;
+  padding-bottom: 0;
 
   .navbar-brand {
     font-family: $gl-sans;
     font-weight: 700 !important;
     letter-spacing: -0.02em;
-    font-size: 1.8rem;
-    color: $gl-green !important;
+    font-size: 1.15rem;
+    color: var(--global-text-color) !important;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      margin-right: 10px;
+      vertical-align: -5px;
+      border-radius: 50%;
+      background: var(--gl-accent);
+      box-shadow: inset -5px -4px 0 rgba(0, 0, 0, 0.18);
+    }
   }
 
   .nav-link {
-    color: #666 !important;
-    font-size: 1.05rem;
+    color: var(--gl-muted) !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.35rem 0.8rem !important;
+    border-radius: 999px;
+    white-space: nowrap;
+    &:hover {
+      color: var(--global-text-color) !important;
+    }
   }
   .nav-item.active > .nav-link {
-    color: #000 !important;
-    font-weight: 400;
+    color: var(--gl-accent) !important;
+    background: var(--gl-accent-soft);
+    font-weight: 600;
+  }
+
+  .navbar-nav {
+    gap: 0.25rem;
+    align-items: center;
   }
 }
 
-@media (min-width: 992px) {
-  #navbar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: auto;
-    width: $gl-sidebar-width;
-    padding: 0;
-    align-items: flex-start;
-    border-right: 1px solid #ddd;
-    box-shadow: none;
-
-    > .container {
-      flex-direction: column;
-      align-items: stretch;
-      padding: 3.5rem 1.2rem 0;
-      max-width: none;
-      height: 100%;
-    }
-
-    .navbar-brand {
-      margin: 0;
-      padding-bottom: 1.5rem;
-      text-align: center;
-      border-bottom: 1px solid #555;
-    }
-
-    .navbar-collapse {
-      display: block !important;
-      text-align: left !important;
-      margin-top: 2rem;
-    }
-
-    .navbar-nav {
-      flex-direction: column;
-      margin: 0 !important;
-      .nav-link {
-        padding: 0.6rem 1.2rem;
-      }
-    }
+@media (max-width: 991.98px) {
+  #navbar .navbar-collapse {
+    padding-bottom: 0.75rem;
   }
+}
 
-  // shift page content right of the sidebar
-  body.fixed-top-nav {
-    padding-top: 0;
-    padding-left: $gl-sidebar-width;
-  }
-  #progress {
-    display: none;
+// Small photo on phones so the text keeps its width
+@media (max-width: 575.98px) {
+  .profile {
+    width: 120px;
   }
 }
 
@@ -219,10 +257,10 @@ footer.fixed-bottom,
 footer.sticky-bottom {
   position: static;
   background: transparent !important;
-  color: #888 !important;
+  color: var(--gl-muted) !important;
   font-family: $gl-sans;
   font-size: 0.75rem;
   a {
-    color: #666 !important;
+    color: var(--gl-muted) !important;
   }
 }

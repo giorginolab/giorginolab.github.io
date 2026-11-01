@@ -29,7 +29,9 @@ Keep page URLs as on the original Google Sites site (`/teaching/`, `/software/`,
 
 ## Pitfalls
 
-- The menu is a fixed left sidebar on wide screens; avoid theme scripts that
-  measure the navbar height (the progress bar is disabled for this reason).
+- The menu is a sticky top bar with pill links (hamburger on phones). Colours
+  are CSS variables at the top of `_sass/_giorginolab.scss`, with an automatic
+  dark mode (`enable_darkmode: true`). Avoid theme scripts that measure the
+  navbar height (the progress bar is disabled for this reason).
 - `baseurl` is empty (site served at the domain root); still use `{{ '/path/' | relative_url }}` for internal links.
 - The build must not need network access (no external feeds or remote JSON).

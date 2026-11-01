@@ -16,8 +16,7 @@ theme, published on GitHub Pages at <https://tonigi.github.io/prova1/>.
 | Images                | `assets/img/`                                               |
 
 Push to `main`: the single workflow `.github/workflows/deploy.yml` builds the
-site and publishes it with GitHub Pages (Settings → Pages → Source: GitHub
-Actions).
+site and publishes it with GitHub Pages (Settings → Pages → Source: GitHub Actions).
 
 ## Local preview
 

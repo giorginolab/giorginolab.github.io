@@ -1,0 +1,13 @@
+{%- comment -%}
+  Two-colour badge (grey label | coloured value), shields.io style, pure CSS.
+  Params: label, value, color (CSS class suffix), href (optional), cls (optional extra class).
+{%- endcomment -%}
+{%- if include.href -%}
+  <a href="{{ include.href }}" class="gl-badge gl-badge--{{ include.color | default: 'grey' }} {{ include.cls }}" role="button"
+    ><span class="gl-badge__k">{{ include.label }}</span><span class="gl-badge__v">{{ include.value }}</span></a
+  >
+{%- else -%}
+  <a class="gl-badge gl-badge--{{ include.color | default: 'grey' }} {{ include.cls }}" role="button"
+    ><span class="gl-badge__k">{{ include.label }}</span><span class="gl-badge__v">{{ include.value }}</span></a
+  >
+{%- endif -%}

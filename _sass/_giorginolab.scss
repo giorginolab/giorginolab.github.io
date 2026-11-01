@@ -163,23 +163,77 @@ article ul ul {
     color: var(--gl-accent);
     border-bottom-color: var(--gl-accent);
   }
-  .title {
-    font-weight: 600;
-  }
-  .links a.btn {
-    font-family: $gl-sans;
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 999px;
-    border: 1px solid var(--gl-line);
-    background: var(--gl-surface);
-    color: var(--global-text-color);
-    padding: 0 0.8rem;
-    &:hover {
-      background: var(--gl-accent);
-      border-color: var(--gl-accent);
-      color: var(--global-hover-text-color);
+  // Entry: Authors (Year). Title. Journal, volume(number), pages.
+  .bib-ref {
+    line-height: 1.55;
+    .author {
+      display: inline;
     }
+    .bib-year,
+    .title,
+    .periodical {
+      display: inline;
+      font-weight: 400;
+      margin-left: 0.25em;
+    }
+    .periodical {
+      color: var(--global-text-color);
+    }
+  }
+  ol.bibliography li .bib-ref .title {
+    font-weight: 500;
+  }
+  .periodical.note {
+    font-size: 0.8rem;
+    color: var(--gl-muted);
+  }
+  .links {
+    margin-top: 0.35rem;
+  }
+}
+
+// Two-colour badges (grey label | coloured value), shields.io style
+.gl-badge {
+  display: inline-flex;
+  margin: 0 0.3rem 0.3rem 0;
+  font-family: $gl-sans;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: #fff !important;
+  vertical-align: middle;
+
+  &__k,
+  &__v {
+    padding: 0.1rem 0.5rem;
+  }
+  &__k {
+    background: #555;
+  }
+  &__v {
+    background: var(--gl-badge, #6b7a72);
+  }
+  &:hover {
+    filter: brightness(1.12);
+  }
+  &--blue {
+    --gl-badge: #1f6fb8;
+  }
+  &--red {
+    --gl-badge: #b3382c;
+  }
+  &--green {
+    --gl-badge: #2f7d5f;
+  }
+  &--gold {
+    --gl-badge: #b5832a;
+  }
+  &--grey {
+    --gl-badge: #6b7a72;
   }
 }
 

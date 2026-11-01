@@ -1,11 +1,11 @@
 // GiorginoLab look (mirrors the Google Sites version of www.giorginolab.it):
-// Merriweather text, green accents, left sidebar navigation, centred titles.
+// Inter text, green accents, left sidebar navigation, centred titles.
 // Everything site-specific lives in this file; al-folio partials stay untouched.
 
 $gl-green: #617e4d;
 $gl-text: #212121;
 $gl-sidebar-width: 250px;
-$gl-serif: "Merriweather", Georgia, serif;
+$gl-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
 :root {
   --global-theme-color: #{$gl-green};
@@ -14,7 +14,7 @@ $gl-serif: "Merriweather", Georgia, serif;
 }
 
 body {
-  font-family: $gl-serif;
+  font-family: $gl-sans;
   font-size: 1rem;
   line-height: 1.6;
   color: $gl-text;
@@ -26,22 +26,22 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $gl-serif;
+  font-family: $gl-sans;
   color: $gl-green;
 }
 
 // Section headings inside content: small, bold, green (like "Research interests")
 article h2,
 .post article h2 {
-  font-size: 1.1rem;
-  font-weight: 900;
-  letter-spacing: 0.03em;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   margin-top: 1.5rem;
 }
 
 article h3 {
   font-size: 1rem;
-  font-weight: 900;
+  font-weight: 600;
   margin-top: 1.75rem;
 }
 
@@ -49,8 +49,10 @@ article h3 {
 article a,
 .post a:not(.btn):not(.post-title):not(.nav-link):not(.abstract):not(.bibtex) {
   color: $gl-text;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
   &:hover {
     color: $gl-green;
   }
@@ -84,15 +86,15 @@ article ul ul {
   }
 }
 
-// Page title: centred, italic, heavy, green, with a short bar underneath
+// Page title: centred, bold, green, with a short bar underneath
 .post-header {
   text-align: center;
   margin-bottom: 1.5rem;
 
   .post-title {
     font-size: 3rem;
-    font-weight: 900;
-    font-style: italic;
+    font-weight: 700;
+    letter-spacing: -0.03em;
     color: $gl-green;
     &::after {
       content: "";
@@ -108,8 +110,7 @@ article ul ul {
   .post-description {
     margin-top: 1.25rem;
     font-size: 1.3rem;
-    font-weight: 700;
-    font-style: italic;
+    font-weight: 500;
     color: $gl-green;
   }
 }
@@ -118,7 +119,7 @@ article ul ul {
 .publications {
   h2.bibliography {
     color: $gl-green;
-    font-weight: 900;
+    font-weight: 600;
   }
   ol.bibliography li .author em {
     color: $gl-green;
@@ -128,7 +129,7 @@ article ul ul {
     font-weight: 700;
   }
   .links a.btn {
-    font-family: "Lato", sans-serif;
+    font-family: $gl-sans;
     text-decoration: none;
     font-weight: 400;
   }
@@ -139,12 +140,13 @@ article ul ul {
 // ---------------------------------------------------------------------------
 
 #navbar {
-  font-family: "Lato", sans-serif;
+  font-family: $gl-sans;
   background: #fff;
 
   .navbar-brand {
-    font-family: $gl-serif;
+    font-family: $gl-sans;
     font-weight: 700 !important;
+    letter-spacing: -0.02em;
     font-size: 1.8rem;
     color: $gl-green !important;
   }
@@ -218,7 +220,7 @@ footer.sticky-bottom {
   position: static;
   background: transparent !important;
   color: #888 !important;
-  font-family: $gl-serif;
+  font-family: $gl-sans;
   font-size: 0.75rem;
   a {
     color: #666 !important;

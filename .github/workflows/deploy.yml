@@ -30,7 +30,7 @@ jobs:
       - id: pages
         uses: actions/configure-pages@v5
       - name: Build
-        # base path comes from the Pages settings ("/prova1" now, "" with a custom domain)
+        # base path comes from the Pages settings ("/giorginolab.it" now, "" with a custom domain)
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production

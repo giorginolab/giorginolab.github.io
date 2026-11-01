@@ -1,7 +1,8 @@
 # Agent guidelines — GiorginoLab website
 
 Static Jekyll site (al-folio theme, trimmed down) that mirrors www.giorginolab.it,
-published on GitHub Pages at https://tonigi.github.io/prova1/.
+published on GitHub Pages at https://giorginolab.github.io/giorginolab.it/
+(repository `giorginolab/giorginolab.it`).
 
 ## Where things live
 
@@ -29,5 +30,5 @@ Keep page URLs as on the original Google Sites site (`/teaching/`, `/software/`,
 
 - The menu is a fixed left sidebar on wide screens; avoid theme scripts that
   measure the navbar height (the progress bar is disabled for this reason).
-- `baseurl` is `/prova1`; use `{{ '/path/' | relative_url }}` for internal links.
+- `baseurl` is `/giorginolab.it`; use `{{ '/path/' | relative_url }}` for internal links.
 - The build must not need network access (no external feeds or remote JSON).

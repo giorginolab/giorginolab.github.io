@@ -7,7 +7,6 @@ nav: true
 nav_order: 3
 ---
 
-
 # Software
 
 I've authored or contributed to a number of open-source software packages in the field of computational statistics and physics.
@@ -83,9 +82,11 @@ A multivariate dataset obtained recording the stretch of various segments of the
 Earlier research focused on the modelling of biomolecular recognition in [unstructured proteins](http://en.wikipedia.org/wiki/Intrinsically_unstructured_proteins), a wide class of proteins, whose detailed mechanisms of action are largely undetermined, and on [multi-scale simulation and prediction of the drug safety problems related with hERG](http://www.vph-noe.eu/exemplarprojects?start=4) within the Virtual Physiological Human Network of Excellence.
 
 ### [MyHeart's NeuroRehab](http://www.labmedinfo.org/projects/myheart) project (2005-2008)
+
 The NR platform supports physicians and therapists in the delivery of personalized exercise plans. The recovery process supports both motor rehabilitation exercises, which are monitored with kinestetic strain-sensor garments, and cognitive rehabilitation. The project involved the creation of the mathematical models, refinement of algorithms, and development of hardware and software, up to the clinical tests of the prototypes. (See [video](http://vimeo.com/896814) and [publications](/publications/))
 
 ### [AdaRTE dialog management](http://www.labmedinfo.org/projects/adarte) system (lead, 2002-2008)
+
 The proposal set forth in my PhD thesis (AdaRTE, a framework to support automated spoken dialogues in telemedicine) was developed into a system which is now used routinely in teaching, research, and to realize dialog systems used in the clinic. (See [publications](/publications/))
 
 Formerly, I worked with the APE collaboration in Pisa and DESY-Zeuthen (Berlin), profiling the hardware and compilation chain of the ApeNEXT massively-parallel dedicated super computer during its development.
@@ -112,4 +113,3 @@ A [function](http://tonigi.github.io/vmd_extensions/group__save.html) to (almost
 ### The [Cast structure tool](http://www.multiscalelab.org/utilities/CastStructureTool)
 
 A modeling plugin which copies the coordinates of a selection A from another selection B, preserving A's topology. Coordinates of A's atoms will be copied verbatim when an unambiguous match exists in B; otherwise, the new coordinates will be guessed with a local fit.
-

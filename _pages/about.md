@@ -22,13 +22,16 @@ latest_posts:
 ---
 
 ## Research interests
+
 Our research focuses on the application of computational models to biology and medicine, at various scales, to characterize genotype-phenotype and protein-drug interactions, making extensive use of molecular dynamics and statistical methods. Our background includes statistical physics, software engineering, and high-performance computational architectures.
 
 ## About me
-**Primo ricercatore** (senior researcher) at the Italian [National Research Council](http://www.cnr.it) (IBF-CNR) since 2023. Tenured in 2012. In 2009 awarded a 3-year *Beatriu de Pinos* grant by the Generalitat de Catalunya for the *in silico* characterization of protein-protein and protein-drug interactions via large-scale all-atom simulations, developed in the [Computational Biophysics Group](http://grib.imim.es/research/computational-science/) at the [University Pompeu Fabra](http://www.upf.edu) in Barcelona (GRIB-IMIM-UPF). Before 2008 with the [Laboratory for Biomedical Informatics "Mario Stefanelli"](http://www.labmedinfo.org/) of the University of Pavia, conducting research on artificial intelligence for healthcare. PhD in Bioengineering and Bioinformatics (University of Pavia, 2005), and degree in Physics (University of Pisa, 2001). Alumn of the [Scuola Normale Superiore](http://www.sns.it) (Pisa, 1995).
+
+**Primo ricercatore** (senior researcher) at the Italian [National Research Council](http://www.cnr.it) (IBF-CNR) since 2023. Tenured in 2012. In 2009 awarded a 3-year _Beatriu de Pinos_ grant by the Generalitat de Catalunya for the _in silico_ characterization of protein-protein and protein-drug interactions via large-scale all-atom simulations, developed in the [Computational Biophysics Group](http://grib.imim.es/research/computational-science/) at the [University Pompeu Fabra](http://www.upf.edu) in Barcelona (GRIB-IMIM-UPF). Before 2008 with the [Laboratory for Biomedical Informatics "Mario Stefanelli"](http://www.labmedinfo.org/) of the University of Pavia, conducting research on artificial intelligence for healthcare. PhD in Bioengineering and Bioinformatics (University of Pavia, 2005), and degree in Physics (University of Pisa, 2001). Alumn of the [Scuola Normale Superiore](http://www.sns.it) (Pisa, 1995).
 
 ## Contacts
-- E-mail: *first name dot last name* at cnr.it
+
+- E-mail: _first name dot last name_ at cnr.it
 - [Profile on Google scholar](http://scholar.google.it/citations?user=6uFYeoAAAAAJ)
 - [Publications](/publications/)
 - GitHub: [@giorginolab](https://github.com/giorginolab) (stable), [@tonigi](https://github.com/tonigi) (work-in-progress)
@@ -39,4 +42,5 @@ Our research focuses on the application of computational models to biology and m
 - On Mastodon: [@giorginolab@mstdn.science](https://mstdn.science/web/@giorginolab)
 
 ## Where
+
 I am part of [CNR-IBF](https://www.ibf.cnr.it) and our group is hosted by the [Department of Biosciences](https://www.dbs.unimi.it/ecm/home) of the University of Milan.

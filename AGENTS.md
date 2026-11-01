@@ -1,8 +1,9 @@
 # Agent guidelines — GiorginoLab website
 
-Static Jekyll site (al-folio theme, trimmed down) that mirrors www.giorginolab.it,
-published on GitHub Pages at https://giorginolab.github.io/
-(repository `giorginolab/giorginolab.github.io`).
+Static Jekyll site (al-folio theme, trimmed down) for the GiorginoLab, served at
+https://www.giorginolab.it/ via GitHub Pages (repository
+`giorginolab/giorginolab.github.io`; custom domain set in Settings → Pages,
+`giorginolab.github.io` and `giorginolab.it` redirect to it).
 
 ## Where things live
 

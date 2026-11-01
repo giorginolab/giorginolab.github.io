@@ -1,8 +1,8 @@
 # GiorginoLab website
 
-Static version of [www.giorginolab.it](https://www.giorginolab.it), built with
+Website of the GiorginoLab, <https://www.giorginolab.it/>. Built with
 [Jekyll](https://jekyllrb.com/) and the [al-folio](https://github.com/alshedivat/al-folio)
-theme, published on GitHub Pages at <https://giorginolab.github.io/>.
+theme and published with GitHub Pages (custom domain of `giorginolab.github.io`).
 
 ## Editing
 

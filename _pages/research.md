@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Research & Software
-permalink: /research/
-description: Software projects and research directions.
+permalink: /software/
 nav: true
 nav_order: 3
 ---
@@ -83,11 +82,11 @@ Earlier research focused on the modelling of biomolecular recognition in [unstru
 
 ### [MyHeart's NeuroRehab](http://www.labmedinfo.org/projects/myheart) project (2005-2008)
 
-The NR platform supports physicians and therapists in the delivery of personalized exercise plans. The recovery process supports both motor rehabilitation exercises, which are monitored with kinestetic strain-sensor garments, and cognitive rehabilitation. The project involved the creation of the mathematical models, refinement of algorithms, and development of hardware and software, up to the clinical tests of the prototypes. (See [video](http://vimeo.com/896814) and [publications](/publications/))
+The NR platform supports physicians and therapists in the delivery of personalized exercise plans. The recovery process supports both motor rehabilitation exercises, which are monitored with kinestetic strain-sensor garments, and cognitive rehabilitation. The project involved the creation of the mathematical models, refinement of algorithms, and development of hardware and software, up to the clinical tests of the prototypes. (See [video](http://vimeo.com/896814) and [publications]({{ '/publications/' | relative_url }}))
 
 ### [AdaRTE dialog management](http://www.labmedinfo.org/projects/adarte) system (lead, 2002-2008)
 
-The proposal set forth in my PhD thesis (AdaRTE, a framework to support automated spoken dialogues in telemedicine) was developed into a system which is now used routinely in teaching, research, and to realize dialog systems used in the clinic. (See [publications](/publications/))
+The proposal set forth in my PhD thesis (AdaRTE, a framework to support automated spoken dialogues in telemedicine) was developed into a system which is now used routinely in teaching, research, and to realize dialog systems used in the clinic. (See [publications]({{ '/publications/' | relative_url }}))
 
 Formerly, I worked with the APE collaboration in Pisa and DESY-Zeuthen (Berlin), profiling the hardware and compilation chain of the ApeNEXT massively-parallel dedicated super computer during its development.
 

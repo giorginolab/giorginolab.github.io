@@ -1,8 +1,7 @@
 ---
 layout: page
 title: The group
-permalink: /the-group/
-description: Group members, alumni, and mentoring activities.
+permalink: /teaching/
 nav: true
 nav_order: 2
 ---
@@ -13,25 +12,21 @@ The group includes the PI, yours truly, and students with a passion for AI, comp
 <img src="{{ '/assets/img/group-pic.jpg' | relative_url }}" alt="GiorginoLab group photo" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid #ced9e5;">
 </figure>
 
-## Current members
-
-- I. Cazzaniga, Research Fellow (CNR)
-- F. Bacic Toplek, Post-doctoral research collaborator (CNR)
-- S. Naik, Pre-doctoral research collaborator (CNR)
-
 ## Where we work
 
 We are located in the Department of Biosciences of the University of Milan. Due to the nature of computational work, we collaborate both in person and online.
 
 ## Joining opportunities
 
-- Interested in joining? Drop me an email.
-- There are usually opportunities for [theses](https://bioscienzebio.unimi.it/offerte_tesi/info-tesi.php?sel=1797&cdl=doc) (final triennale/specialistica), and occasionally PhD.
+- Interested in joining? There are usually opportunities for [theses](https://bioscienzebio.unimi.it/offerte_tesi/info-tesi.php?sel=1797&cdl=doc) (final triennale/specialistica), and occasionally PhD.
 - Selection procedures are advertised in the official CNR website (see e.g. sections [Concorsi e opportunità](https://www.cnr.it/it/concorsi-opportunita), [Selezioni online](https://selezionionline.cnr.it/jconon/) and [Concorsi e selezioni](https://www.urp.cnr.it/documenti/concorsi-e-selezioni)).
 
 ## Alumni
 
+- F. Bacic Toplek, formerly a post-doctoral research collaborator.
+- S. Naik, formerly a pre-doctoral research collaborator.
 - F. Ballabio, formerly a post-doc with our group; now a post-doc at Helmholtz Center Munich.
+- I. Cazzaniga, formerly a research fellow; now a PhD student at UPF Barcelona and CSIC-IQAC.
 - C. Caprai, formerly a research fellow; now a PhD student at Sorbonne University and Institut Pasteur.
 - F. Santoro, formerly a research fellow.
 

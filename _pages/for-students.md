@@ -1,8 +1,8 @@
 ---
 layout: page
 title: For students
-permalink: /for-students/
-description: Thesis and student collaboration opportunities.
+permalink: /available-theses/
+nav_title: Available theses
 nav: true
 nav_order: 5
 ---
@@ -18,7 +18,7 @@ Projects are currently available in the following research areas (inquire for de
 
 ## What you need
 
-- A degree-in-the-making: engineering, physics, chemistry, and biology courses (with an interest in quantitative and computational aspects) will usually find interesting and challenging projects.
+- A degree-in-the-making: engineering, physics, and chemistry and biology (as long as you have an interest in quantitative and computational aspects) courses will usually find interesting and challenging projects.
 - A reasonable knowledge of computer programming and of the English language.
 - A supporting professor in your home institution ("relatore interno").
 

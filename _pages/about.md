@@ -1,6 +1,7 @@
 ---
 layout: about
 title: About
+nav_title: Home
 permalink: /
 subtitle: A Computational Biophysics Laboratory
 
@@ -33,7 +34,7 @@ Our research focuses on the application of computational models to biology and m
 
 - E-mail: _first name dot last name_ at cnr.it
 - [Profile on Google scholar](http://scholar.google.it/citations?user=6uFYeoAAAAAJ)
-- [Publications](/publications/)
+- [Publications]({{ '/publications/' | relative_url }})
 - GitHub: [@giorginolab](https://github.com/giorginolab) (stable), [@tonigi](https://github.com/tonigi) (work-in-progress)
 - ORCID: 0000-0001-6449-0596; ResearcherID: H-1866-2011 (if you are into curating such proprietary databases)
 - Abilitazione a professore II fascia: 09/G2 Bioingegneria (ASN 2016)

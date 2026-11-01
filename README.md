@@ -2,7 +2,7 @@
 
 Static version of [www.giorginolab.it](https://www.giorginolab.it), built with
 [Jekyll](https://jekyllrb.com/) and the [al-folio](https://github.com/alshedivat/al-folio)
-theme, published on GitHub Pages at <https://giorginolab.github.io/giorginolab.it/>.
+theme, published on GitHub Pages at <https://giorginolab.github.io/>.
 
 ## Editing
 
@@ -23,5 +23,5 @@ site and publishes it with GitHub Pages (Settings → Pages → Source: GitHub A
 With Ruby 3.3:
 
 ```bash
-bundle install && bundle exec jekyll serve   # http://localhost:4000/giorginolab.it/
+bundle install && bundle exec jekyll serve   # http://localhost:4000/
 ```

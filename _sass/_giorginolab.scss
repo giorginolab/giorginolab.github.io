@@ -192,48 +192,63 @@ article ul ul {
   }
 }
 
-// Two-colour badges (grey label | coloured value), shields.io style
+// Two-colour badges (grey label | coloured value), modelled on shields.io "flat":
+// 20px high, Verdana 11px, 3px radius, soft text shadow, shields colour palette.
 .gl-badge {
   display: inline-flex;
   margin: 0 0.3rem 0.3rem 0;
-  font-family: $gl-sans;
-  font-size: 0.7rem;
-  font-weight: 600;
-  line-height: 1.5;
-  border-radius: 4px;
+  height: 20px;
+  font-family: Verdana, Geneva, "DejaVu Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 3px;
   overflow: hidden;
   text-decoration: none !important;
   cursor: pointer;
   color: #fff !important;
   vertical-align: middle;
+  white-space: nowrap;
+  text-shadow: 0 1px 0 rgba(1, 1, 1, 0.3);
+  // subtle top-to-bottom sheen like the classic shields look
+  background-image: linear-gradient(
+    to bottom,
+    rgba(187, 187, 187, 0.1),
+    rgba(0, 0, 0, 0.1)
+  );
 
   &__k,
   &__v {
-    padding: 0.1rem 0.5rem;
+    padding: 0 6px;
+    color: #fff !important;
   }
   &__k {
     background: #555;
   }
   &__v {
-    background: var(--gl-badge, #6b7a72);
+    background: var(--gl-badge, #9f9f9f);
+  }
+  &__k,
+  &__v {
+    background-image: inherit;
   }
   &:hover {
-    filter: brightness(1.12);
+    filter: brightness(1.1);
   }
   &--blue {
-    --gl-badge: #1f6fb8;
+    --gl-badge: #007ec6;
   }
   &--red {
-    --gl-badge: #b3382c;
+    --gl-badge: #e05d44;
   }
   &--green {
-    --gl-badge: #2f7d5f;
+    --gl-badge: #4c1;
   }
   &--gold {
-    --gl-badge: #b5832a;
+    --gl-badge: #dfb317;
   }
   &--grey {
-    --gl-badge: #6b7a72;
+    --gl-badge: #9f9f9f;
   }
 }
 

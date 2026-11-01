@@ -1,0 +1,215 @@
+// GiorginoLab look (mirrors the Google Sites version of www.giorginolab.it):
+// Merriweather text, green accents, left sidebar navigation, centred titles.
+// Everything site-specific lives in this file; al-folio partials stay untouched.
+
+$gl-green: #617e4d;
+$gl-text: #212121;
+$gl-sidebar-width: 250px;
+$gl-serif: "Merriweather", Georgia, serif;
+
+:root {
+  --global-theme-color: #{$gl-green};
+  --global-hover-color: #{$gl-green};
+  --global-text-color: #{$gl-text};
+}
+
+body {
+  font-family: $gl-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: $gl-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $gl-serif;
+  color: $gl-green;
+}
+
+// Section headings inside content: small, bold, green (like "Research interests")
+article h2,
+.post article h2 {
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  margin-top: 1.5rem;
+}
+
+article h3 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+// Links: dark, bold, underlined
+article a,
+.post a:not(.btn):not(.post-title):not(.nav-link):not(.abstract):not(.bibtex) {
+  color: $gl-text;
+  font-weight: 700;
+  text-decoration: underline;
+  &:hover {
+    color: $gl-green;
+  }
+}
+
+article ul li::marker {
+  content: "▪  ";
+  font-size: 0.8em;
+}
+
+// Profile photo on the home page: small, square, with a small caption
+.profile {
+  width: 160px;
+  img {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .more-info {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}
+
+// Page title: centred, italic, heavy, green, with a short bar underneath
+.post-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+
+  .post-title {
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+    color: $gl-green;
+    &::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 6px;
+      margin: 1rem auto 0;
+      background: $gl-green;
+    }
+  }
+
+  .desc,
+  .post-description {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    color: $gl-green;
+  }
+}
+
+// Publications: year headers and author highlight in green
+.publications {
+  h2.bibliography {
+    color: $gl-green;
+    font-weight: 900;
+  }
+  ol.bibliography li .author em {
+    color: $gl-green;
+    border-bottom-color: $gl-green;
+  }
+  .title {
+    font-weight: 700;
+  }
+  .links a.btn {
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Navigation: fixed left sidebar on wide screens, top bar + hamburger on mobile
+// ---------------------------------------------------------------------------
+
+#navbar {
+  font-family: "Lato", sans-serif;
+  background: #fff;
+
+  .navbar-brand {
+    font-family: $gl-serif;
+    font-weight: 700 !important;
+    font-size: 1.8rem;
+    color: $gl-green !important;
+  }
+
+  .nav-link {
+    color: #666 !important;
+    font-size: 1.05rem;
+  }
+  .nav-item.active > .nav-link {
+    color: #000 !important;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 992px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    width: $gl-sidebar-width;
+    padding: 0;
+    align-items: flex-start;
+    border-right: 1px solid #ddd;
+    box-shadow: none;
+
+    > .container {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 3.5rem 1.2rem 0;
+      max-width: none;
+      height: 100%;
+    }
+
+    .navbar-brand {
+      margin: 0;
+      padding-bottom: 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid #555;
+    }
+
+    .navbar-collapse {
+      display: block !important;
+      text-align: left !important;
+      margin-top: 2rem;
+    }
+
+    .navbar-nav {
+      flex-direction: column;
+      margin: 0 !important;
+      .nav-link {
+        padding: 0.6rem 1.2rem;
+      }
+    }
+  }
+
+  // shift page content right of the sidebar
+  body.fixed-top-nav {
+    padding-top: 4rem;
+    padding-left: $gl-sidebar-width;
+  }
+  #progress {
+    display: none;
+  }
+}
+
+// Footer: discreet, not fixed
+footer.fixed-bottom,
+footer.sticky-bottom {
+  position: static;
+  background: transparent !important;
+  color: #888 !important;
+  font-family: $gl-serif;
+  font-size: 0.75rem;
+  a {
+    color: #666 !important;
+  }
+}

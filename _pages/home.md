@@ -5,6 +5,11 @@ nav_title: Home
 permalink: /
 subtitle: A Computational Biophysics Laboratory
 
+profile:
+  align: right
+  image: group-pic.jpg
+  image_circular: false
+
 selected_papers: false
 social: false
 
@@ -17,13 +22,13 @@ latest_posts:
   enabled: false
 ---
 
-{% include gl_montage.liquid %}
-
 Our research focuses on the application of computational models to biology and medicine, at various scales, to characterize genotype-phenotype and protein-drug interactions, making extensive use of molecular dynamics and statistical methods. Our background includes statistical physics, software engineering, and high-performance computational architectures.
 
 We are part of the [Institute of Biophysics](https://www.ibf.cnr.it) of the Italian National Research Council (CNR-IBF), hosted by the [Department of Biosciences](https://www.dbs.unimi.it/ecm/home) of the University of Milan.
 
 ## Research
+
+{% include gl_montage.liquid %}
 
 - **The geometry of protein motion.** Intrinsic dimension and collective variables to describe, compare and bias the dynamics of macromolecules. [JCIM 2026](https://doi.org/10.1021/acs.jcim.5c02716) · [JOSS 2019](https://doi.org/10.21105/joss.01773)
 - **GPCR dynamics and allostery.** Large-scale simulations of G protein-coupled receptors to map their conformational dynamics, cryptic allosteric sites and lipid entry gateways. [Nat Methods 2020](https://doi.org/10.1038/s41592-020-0884-y) · [Nat Commun 2025](https://doi.org/10.1038/s41467-025-57034-y)

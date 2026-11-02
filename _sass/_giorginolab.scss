@@ -321,6 +321,49 @@ article ul ul {
   }
 }
 
+// News list: muted dates in a narrow column, hairline dividers. Rendered with
+// flex rows instead of a <table>, so the text can wrap beside the floated photo.
+.news {
+  .table-responsive {
+    overflow: visible;
+  }
+  table,
+  tbody {
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+  tr {
+    display: flex;
+    gap: 1rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--gl-line);
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  th,
+  td {
+    display: block;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    color: var(--global-text-color);
+  }
+  th {
+    flex: 0 0 7rem;
+    width: 7rem !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--gl-muted);
+    white-space: nowrap;
+  }
+  td {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
 // Footer: discreet, not fixed
 footer.fixed-bottom,
 footer.sticky-bottom {

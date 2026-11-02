@@ -316,10 +316,17 @@ article ul ul {
   }
 }
 
-// Small photo on phones so the text keeps its width
+// Phones: small photo without caption, slightly smaller page titles,
+// so the home page title still fits beside the photo
 @media (max-width: 575.98px) {
   .profile {
-    width: 120px;
+    width: 96px;
+    .more-info {
+      display: none;
+    }
+  }
+  .post-header .post-title {
+    font-size: 2.25rem;
   }
 }
 

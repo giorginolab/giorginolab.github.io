@@ -35,7 +35,7 @@ More on the [research page]({{ '/research/' | relative_url }}).
 
 ## People
 
-The lab is led by [Toni Giorgino]({{ '/teaching/#principal-investigator' | relative_url }}), senior researcher at CNR-IBF. See [the group]({{ '/teaching/' | relative_url }}) for members and alumni, and [Join us]({{ '/available-theses/' | relative_url }}) if you would like to join.
+The lab is led by [Toni Giorgino]({{ '/group/#principal-investigator' | relative_url }}), senior researcher at CNR-IBF. See [the group]({{ '/group/' | relative_url }}) for members and alumni, and [Join us]({{ '/join/' | relative_url }}) if you would like to join.
 
 ## Contact
 

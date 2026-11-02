@@ -9,7 +9,7 @@ theme and published with GitHub Pages (custom domain of `giorginolab.github.io`)
 | What                  | Where                                                       |
 | --------------------- | ----------------------------------------------------------- |
 | Pages (navbar)        | `_pages/*.md` (`nav: true`, `nav_order`)                    |
-| Blog posts            | `_posts/YYYY-MM-DD-title.md`                                |
+| News items            | `_news/YYYY-MM-DD-title.md` (shown on the home page)        |
 | Publication list      | `_bibliography/*.bib`, rendered by `_pages/publications.md` |
 | Site settings         | `_config.yml`                                               |
 | Look (fonts, colours) | `_sass/_giorginolab.scss`                                   |

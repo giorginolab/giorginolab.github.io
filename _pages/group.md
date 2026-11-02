@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The group
-permalink: /teaching/
+permalink: /group/
 nav: true
 nav_order: 2
 ---
@@ -42,7 +42,7 @@ We are located in the Department of Biosciences of the University of Milan. Due 
 
 ## Joining
 
-Interested in joining? See [Join us]({{ '/available-theses/' | relative_url }}) for thesis topics, positions and how to apply.
+Interested in joining? See [Join us]({{ '/join/' | relative_url }}) for thesis topics, positions and how to apply.
 
 ## Alumni
 

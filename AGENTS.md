@@ -10,14 +10,15 @@ https://www.giorginolab.it/ via GitHub Pages (repository
 | What                  | Where                                                          |
 | --------------------- | -------------------------------------------------------------- |
 | Pages (menu)          | `_pages/*.md` (`nav: true`, `nav_order`, optional `nav_title`) |
-| Blog posts            | `_posts/YYYY-MM-DD-title.md`                                   |
+| News items            | `_news/YYYY-MM-DD-title.md` (shown on the home page)           |
 | Publication list      | `_bibliography/*.bib`, rendered by `_pages/publications.md`    |
 | Site settings         | `_config.yml`                                                  |
 | Look (fonts, colours) | `_sass/_giorginolab.scss` (all site-specific styling)          |
 | Images                | `assets/img/`                                                  |
 
-Keep page URLs as on the original Google Sites site (`/teaching/`, `/software/`,
-`/available-theses/`, `/publications/`).
+Each page's file name matches its URL (`_pages/group.md` → `/group/`, `join.md` →
+`/join/`, …; `home.md` is `/`). Menu labels are the page titles (only `home.md` sets
+`nav_title: Home`). There is no blog.
 
 ## Build and deploy
 

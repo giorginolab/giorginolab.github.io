@@ -382,6 +382,7 @@ footer.sticky-bottom {
 // Home page montage of figures from our papers (_includes/gl_montage.liquid):
 // four square tiles over two wide strips, captions on a dark bar.
 .gl-montage {
+  clear: both;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 6px;

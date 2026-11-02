@@ -7,8 +7,10 @@ subtitle: A Computational Biophysics Laboratory
 
 profile:
   align: right
-  image: group-pic.jpg
+  image: self-teide-small.jpg
   image_circular: false
+  more_info: >
+    <p>The PI in 2004...</p>
 
 selected_papers: false
 social: false
@@ -25,6 +27,8 @@ latest_posts:
 Our research focuses on the application of computational models to biology and medicine, at various scales, to characterize genotype-phenotype and protein-drug interactions, making extensive use of molecular dynamics and statistical methods. Our background includes statistical physics, software engineering, and high-performance computational architectures.
 
 We are part of the [Institute of Biophysics](https://www.ibf.cnr.it) of the Italian National Research Council (CNR-IBF), hosted by the [Department of Biosciences](https://www.dbs.unimi.it/ecm/home) of the University of Milan.
+
+<div style="clear: both"></div>
 
 ## Research
 

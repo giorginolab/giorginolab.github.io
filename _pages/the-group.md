@@ -12,6 +12,11 @@ The group includes the PI, yours truly, and students with a passion for AI, comp
 <img src="{{ '/assets/img/group-pic.jpg' | relative_url }}" alt="GiorginoLab group photo" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid #ced9e5;">
 </figure>
 
+## Current members
+
+- [Toni Giorgino]({{ '/toni-giorgino/' | relative_url }}), principal investigator (CNR-IBF).
+- Fabrian Behrens.
+
 ## Where we work
 
 We are located in the Department of Biosciences of the University of Milan. Due to the nature of computational work, we collaborate both in person and online.

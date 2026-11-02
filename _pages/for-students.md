@@ -40,4 +40,4 @@ There are occasionally opportunities for PhD students. Fellowships and positions
 
 ## How to apply
 
-Write to [Toni Giorgino]({{ '/toni-giorgino/' | relative_url }}) (_first name dot last name_ at cnr.it) with a short CV, your exam transcript, and a few lines on the topics that interest you.
+Write to [Toni Giorgino]({{ '/teaching/#principal-investigator' | relative_url }}) (_first name dot last name_ at cnr.it) with a short CV, your exam transcript, and a few lines on the topics that interest you.

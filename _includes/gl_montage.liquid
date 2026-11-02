@@ -1,0 +1,53 @@
+{% comment %} Montage of figures from our papers, shown on the home page. Images in assets/img/montage/. {% endcomment %}
+<div class="gl-montage">
+  <figure class="tile">
+    <img
+      src="{{ '/assets/img/montage/scov2-ml188-unbinding.jpg' | relative_url }}"
+      alt="Unbinding pathway of the ML188 inhibitor from the SARS-CoV-2 main protease"
+      loading="eager"
+    >
+    <figcaption>Drug unbinding pathways</figcaption>
+  </figure>
+  <figure class="tile">
+    <img
+      src="{{ '/assets/img/montage/mdcath-ss-melting.jpg' | relative_url }}"
+      alt="Loss of secondary structure over time at 413 K and 450 K for mainly-alpha and mainly-beta CATH domains (mdCATH)"
+      loading="eager"
+    >
+    <figcaption>mdCATH: thermal unfolding</figcaption>
+  </figure>
+  <figure class="tile">
+    <img
+      src="{{ '/assets/img/montage/mdid-rmsd-id.jpg' | relative_url }}"
+      alt="RMSD versus intrinsic dimension for folded and unfolded trajectories"
+      loading="eager"
+    >
+    <figcaption>Intrinsic dimension of dynamics</figcaption>
+  </figure>
+  <figure class="tile">
+    <img src="{{ '/assets/img/montage/scov2-virion.jpg' | relative_url }}" alt="Illustration of the SARS-CoV-2 virion" loading="eager">
+    <figcaption>SARS-CoV-2 proteome dynamics</figcaption>
+  </figure>
+  <figure class="wide">
+    <img
+      src="{{ '/assets/img/montage/cg-protein-g.jpg' | relative_url }}"
+      alt="Folding pathways of protein G from machine-learned coarse-grained simulations"
+      loading="lazy"
+    >
+    <figcaption>Machine-learned coarse-grained models</figcaption>
+  </figure>
+  <figure class="wide">
+    <img
+      src="{{ '/assets/img/montage/torchmd-fes.jpg' | relative_url }}"
+      alt="Free energy surfaces from all-atom and coarse-grained simulations"
+      loading="lazy"
+    >
+    <figcaption>Free energy landscapes</figcaption>
+  </figure>
+</div>
+<p class="gl-credits">
+  Figures from our papers in <a href="https://doi.org/10.1093/nar/gkab977">NAR 2022</a> (CC BY-NC),
+  <a href="https://doi.org/10.1038/s41597-024-04140-z">Sci Data 2024</a> (SI),
+  <a href="https://doi.org/10.1038/s41467-023-41343-1">Nat Commun 2023</a> and <a href="https://doi.org/10.1021/acs.jctc.0c01343">JCTC 2021</a> (CC
+  BY), cropped, and from the <a href="https://www.giorginolab.it/MDIntrinsicDimension/">MDIntrinsicDimension</a> documentation.
+</p>

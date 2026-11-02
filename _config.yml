@@ -9,9 +9,8 @@ last_name:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A computational biophysics laboratory.
 footer_text: >
-  <a href="https://www.ibf.cnr.it" target="_blank">CNR-IBF</a> ·
-  <a href="https://www.dbs.unimi.it/ecm/home" target="_blank">Department of Biosciences, University of Milan</a>.
-  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a>.
+  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: computational biophysics, molecular dynamics, GPCR, intrinsic dimension, machine learning, CNR-IBF, University of Milan
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.png # favicon image in /assets/img/ (or a short emoji)

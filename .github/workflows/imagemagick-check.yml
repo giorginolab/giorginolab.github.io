@@ -1,0 +1,39 @@
+# Test only (branch claude/ubuntu-26-check): is ImageMagick preinstalled on a pristine ubuntu-26.04 runner?
+name: ImageMagick check
+
+on:
+  push:
+    branches: [claude/ubuntu-26-check]
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-26.04
+    steps:
+      - name: OS and runner image
+        run: |
+          cat /etc/os-release
+          echo "ImageOS=$ImageOS ImageVersion=$ImageVersion"
+      - name: Look for ImageMagick commands on PATH
+        run: |
+          for c in magick convert identify mogrify montage composite compare; do
+            printf '%-10s ' "$c"; type -a "$c" 2>/dev/null | tr '\n' ' ' || true; echo
+          done
+          echo "--- PATH ---"; echo "$PATH" | tr ':' '\n'
+      - name: Look for ImageMagick files anywhere (not only PATH)
+        run: |
+          sudo find / -xdev \( -name 'magick' -o -name 'convert' -o -name 'convert-im6*' -o -name 'magick-*' -o -name 'ImageMagick*' -o -name 'libMagick*' \) \
+            -not -path '/proc/*' -not -path '/sys/*' 2>/dev/null | head -50 || true
+          echo "--- done find ---"
+      - name: Look for ImageMagick packages and other installs
+        run: |
+          dpkg -l 2>/dev/null | grep -i -E 'imagemagick|libmagick|graphicsmagick' || echo "no imagemagick/graphicsmagick dpkg packages"
+          command -v snap >/dev/null && snap list 2>/dev/null | grep -i magick || true
+          command -v brew >/dev/null && brew list 2>/dev/null | grep -i magick || true
+          command -v gm >/dev/null && gm version | head -2 || echo "no gm (GraphicsMagick)"
+          find /usr/local /opt /home -maxdepth 4 -iname '*magick*' 2>/dev/null | head -20 || true
+      - name: Version if found
+        run: |
+          if command -v magick >/dev/null; then magick -version | head -3
+          elif command -v convert >/dev/null; then convert -version | head -3
+          else echo "RESULT: no ImageMagick (magick/convert) on this runner"; fi

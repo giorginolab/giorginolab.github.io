@@ -449,8 +449,11 @@ footer.sticky-bottom {
       object-fit: contain;
     }
   }
+  // beat ".post article h2" so the heading lines up with the image top
+  .post article & h2,
   h2 {
     margin-top: 0;
+    line-height: 1.2;
   }
   .papers {
     font-size: 0.85rem;

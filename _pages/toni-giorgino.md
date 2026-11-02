@@ -28,6 +28,25 @@ profile:
 - I am not on Facebook, Instagram, etc. [See why](https://web.archive.org/web/20240329064537/https://www.theonion.com/cias-facebook-program-dramatically-cut-agencys-costs-1819594988). (Warning: satire)
 - On Mastodon: [@giorginolab@mstdn.science](https://mstdn.science/web/@giorginolab)
 
+## Teaching
+
+In the past I've lectured for courses including:
+
+- Fondamenti di Informatica Laboratorio (Dept. of Engineering and Computers Science, University of Pavia, Italy)
+- Molecular Simulations (Master in Bioinformatics for Health Sciences, Universitat Pompeu Fabra, Barcelona, Spain)
+- High Performance Computing (Master in Bioinformatics for Health Sciences, Universitat Pompeu Fabra, Barcelona, Spain)
+- Fonts i tecnologies de la informació (Biologia Humana, Universitat Pompeu Fabra, Barcelona, Spain)
+
+Some course material is linked below (likely outdated):
+
+- Automated ligand parametrization at the [High Throughput Molecular Dynamics workshop](http://htmdworkshop.wordpress.com/) (session 2), PRBB Barcelona, 7 Nov. 2013
+- Coarse graining at the High Throughput Molecular Dynamics workshop (session 2), PRBB Barcelona, 8 Nov. 2013
+- [High performance computing (HPC)](http://www.multiscalelab.org/master/HPC), Master in Bioinformatics for Health Sciences, Universitat Pompeu Fabra, 2012
+- [Introduction to database modeling](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx0b25pZ2lvcmdpbm98Z3g6NzU1ZDlmMWY3M2VhNTgyMw), part of the course Fonts i Tecnologies (spanish, biology undergraduate), Universitat Pompeu Fabra, 2011
+- Slides for the [High performance computing (HPC)](http://www.multiscalelab.org/master/HPC) course: class 7, class 8 (master [Bioinformatics for Health Sciences](http://www.upf.edu/postgrau/en/masters/biomedicina/bioinfo/presentacio/index.html)), Universitat Pompeu Fabra, 2010
+- Slides for the [Molecular Simulations (MSI)](http://www.multiscalelab.org/master/MSI) course: preparing simulations (class 2); free energy of deca-alanin (class 23-24) (master [Bioinformatics for Health Sciences](http://www.upf.edu/postgrau/en/masters/biomedicina/bioinfo/presentacio/index.html)), Universitat Pompeu Fabra, 2010
+- Slides for the course [Fondamenti Informatica Laboratorio](http://fdi.labmedinfo.org/aa05-06larizza/seminari.htm) (Università di Pavia, 2002-2008)
+
 ## Where
 
 I am part of [CNR-IBF](https://www.ibf.cnr.it) and our group is hosted by the [Department of Biosciences](https://www.dbs.unimi.it/ecm/home) of the University of Milan.

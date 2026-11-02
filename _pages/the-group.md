@@ -21,10 +21,9 @@ The group includes the PI, yours truly, and students with a passion for AI, comp
 
 We are located in the Department of Biosciences of the University of Milan. Due to the nature of computational work, we collaborate both in person and online.
 
-## Joining opportunities
+## Joining
 
-- Interested in joining? There are usually opportunities for [theses](https://bioscienzebio.unimi.it/offerte_tesi/info-tesi.php?sel=1797&cdl=doc) (final triennale/specialistica), and occasionally PhD.
-- Selection procedures are advertised in the official CNR website (see e.g. sections [Concorsi e opportunità](https://www.cnr.it/it/concorsi-opportunita), [Selezioni online](https://selezionionline.cnr.it/jconon/) and [Concorsi e selezioni](https://www.urp.cnr.it/documenti/concorsi-e-selezioni)).
+Interested in joining? See [Join us]({{ '/available-theses/' | relative_url }}) for thesis topics, positions and how to apply.
 
 ## Alumni
 

@@ -1,20 +1,25 @@
 ---
 layout: page
-title: For students
+title: Join us
 permalink: /available-theses/
-nav_title: Available theses
+nav_title: Join us
 nav: true
 nav_order: 6
 ---
 
-My group hosts qualified undergraduate (laurea triennale e specialistica) and PhD (dottorato) students willing to work on computation-based projects. Mentoring will take place in collaboration with an academic advisor (relatore interno) at your home institution.
+We host qualified undergraduate (laurea triennale e magistrale) and PhD (dottorato) students willing to work on computation-based projects. Mentoring takes place in collaboration with an academic advisor (relatore interno) at your home institution.
 
-## Available project areas
+## Thesis topics
 
-Projects are currently available in the following research areas (inquire for details):
+Projects are usually available within our current [research themes]({{ '/research/' | relative_url }}) (inquire for details):
 
-- Statistical learning algorithms and their application in biomolecular simulations, computational chemistry, and other big data sets.
-- Adaptation of biostatistical algorithms and models, with their application to, e.g., disease progression, survival prediction, and motion analysis.
+- **The geometry of protein motion:** intrinsic dimension and collective variables for molecular dynamics.
+- **GPCR dynamics and allostery:** analysis of large collections of receptor simulations.
+- **Machine learning and large MD datasets:** statistical learning on biomolecular simulations and other large data sets.
+- **Binding, misfolding and disease:** simulations of drug binding and of disease-related protein variants.
+- **Computational statistics:** time-series alignment and models of disease progression and survival.
+
+Students of the University of Milan can also find our proposals among the [thesis offers of the Department of Biosciences](https://bioscienzebio.unimi.it/offerte_tesi/info-tesi.php?sel=1797&cdl=doc).
 
 ## What you need
 
@@ -28,3 +33,11 @@ Projects are currently available in the following research areas (inquire for de
 - You will learn to use state-of-the-art software, methods, and development practices.
 - Supervision generally occurs via a combination of on-site and remote sessions.
 - We'll collaborate with Italian or foreign institutions, depending on your interest, topic, and availability of data.
+
+## PhD and post-doctoral positions
+
+There are occasionally opportunities for PhD students. Fellowships and positions are advertised on the official CNR websites, e.g. [Concorsi e opportunità](https://www.cnr.it/it/concorsi-opportunita), [Selezioni online](https://selezionionline.cnr.it/jconon/) and [Concorsi e selezioni](https://www.urp.cnr.it/documenti/concorsi-e-selezioni).
+
+## How to apply
+
+Write to [Toni Giorgino]({{ '/toni-giorgino/' | relative_url }}) (_first name dot last name_ at cnr.it) with a short CV, your exam transcript, and a few lines on the topics that interest you.

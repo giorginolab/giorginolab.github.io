@@ -26,7 +26,13 @@ latest_posts:
 
 Our research focuses on the application of computational models to biology and medicine, at various scales, to characterize genotype-phenotype and protein-drug interactions, making extensive use of molecular dynamics and statistical methods. Our background includes statistical physics, software engineering, and high-performance computational architectures.
 
+
+## People
+
+The lab is led by [Toni Giorgino]({{ '/group/#principal-investigator' | relative_url }}), senior researcher at CNR-IBF. See [the group]({{ '/group/' | relative_url }}) for members and alumni, and [Join us]({{ '/join/' | relative_url }}) if you would like to join.
+
 We are part of the [Institute of Biophysics](https://www.ibf.cnr.it) of the Italian National Research Council (CNR-IBF), hosted by the [Department of Biosciences](https://www.dbs.unimi.it/ecm/home) of the University of Milan.
+
 
 <div style="clear: both"></div>
 
@@ -42,9 +48,6 @@ We are part of the [Institute of Biophysics](https://www.ibf.cnr.it) of the Ital
 
 More on the [research page]({{ '/research/' | relative_url }}).
 
-## People
-
-The lab is led by [Toni Giorgino]({{ '/group/#principal-investigator' | relative_url }}), senior researcher at CNR-IBF. See [the group]({{ '/group/' | relative_url }}) for members and alumni, and [Join us]({{ '/join/' | relative_url }}) if you would like to join.
 
 ## Contact
 

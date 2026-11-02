@@ -4,7 +4,7 @@ title: For students
 permalink: /available-theses/
 nav_title: Available theses
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 My group hosts qualified undergraduate (laurea triennale e specialistica) and PhD (dottorato) students willing to work on computation-based projects. Mentoring will take place in collaboration with an academic advisor (relatore interno) at your home institution.

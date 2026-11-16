@@ -32,7 +32,7 @@ nav_order: 5
 - Giorgino T. Untitled - A solution to a gyroscope-related problem, as a
   1800-styled Italian rhymed poem. (Unchecked - the solution may well be
   wrong!), ca. 1995.
-  [link](https://drive.google.com/file/d/1OiMskpnNjZ_tCJFJXiAJA9pSKuusrF0K/view?usp=drive_link)
+  [PDF]({{ '/assets/pdf/giorgino_giroscopi.pdf' | relative_url }})
 
 ### Academic theses
 
@@ -41,6 +41,7 @@ nav_order: 5
   Pavia il 10 marzo 2005. Bibl. Nazionale Centrale Firenze TDR 2005 6713.
 - Giorgino T. ApeNEXT: architettura ed algoritmi di LGT. Tesi di Laurea
   discussa presso l'Università degli Studi di Pisa il 4 giugno 2001.
+  [PDF]({{ '/assets/pdf/giorgino-apenext-lgt-thesis.pdf' | relative_url }})
 
 ### Old essays
 

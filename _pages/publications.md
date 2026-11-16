@@ -41,7 +41,7 @@ nav_order: 5
   Pavia il 10 marzo 2005. Bibl. Nazionale Centrale Firenze TDR 2005 6713.
 - Giorgino T. ApeNEXT: architettura ed algoritmi di LGT. Tesi di Laurea
   discussa presso l'Università degli Studi di Pisa il 4 giugno 2001.
-  [PDF]({{ '/assets/pdf/giorgino-apenext-lgt-thesis.pdf' | relative_url }})
+  [PDF](https://doi.org/10.5281/zenodo.4651592)
 
 ### Old essays
 

@@ -404,10 +404,17 @@ footer.sticky-bottom {
   }
 }
 
-// Logos are dark blue on transparent: make them light in dark mode
-html[data-theme="dark"] footer .gl-footer-row img {
-  filter: brightness(0) invert(1);
-  opacity: 0.7;
+// Logos are dark blue: swap in the white versions in dark mode
+html[data-theme="dark"] footer .gl-footer-row {
+  img.gl-logo-cnr {
+    content: url("/assets/img/cnr-logo-white.png");
+  }
+  img.gl-logo-ibf {
+    content: url("/assets/img/cnr-ibf-logo-white.png");
+  }
+  img {
+    opacity: 0.7;
+  }
 }
 
 // Home page montage of figures from our papers (_includes/gl_montage.liquid):

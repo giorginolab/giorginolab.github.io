@@ -8,12 +8,14 @@ nav_order: 4
 
 I've authored or contributed to a number of open-source software packages in the field of computational statistics and physics.
 
-- The [SCov2-MD](http://www.scov2-md.org/) database
-  - Allowing the evolution-structure-dynamics-phenotype multidimensional analysis on SARS-CoV-2 genomes. Described in the paper [SCoV2-MD: a database for the dynamics of the SARS-CoV-2 proteome and variant impact predictions](https://doi.org/10.1093/nar/gkab977), published in Nucleic Acid Research as a Breakthrough article.
 - The [Dynamic Time Warping project](https://dynamictimewarping.github.io/)
   - Providing packages and information on an extensive array of [DTW-style algorithms in both R and Python](https://dynamictimewarping.github.io/). The DTW algorithm computes the time axis stretch which optimally maps one timeseries (query) onto another (reference). The packages provide the most complete, freely-available (GPL) implementation of Dynamic Time Warping-type (DTW) algorithms up to date. They are described in the (~1000 citations) paper [Computing and Visualizing Dynamic Time Warping Alignments in R: the dtw Package.](http://www.jstatsoft.org/v31/i07)
 - The [MYSEC-PM (Secondary Myelofibrosys Prognostic Model) model](http://www.mysec-pm.eu/).
   - A model and the corresponding online calculator described in A clinical-molecular prognostic model to predict survival in patients with post polycythemia vera and post essential thrombocythemia myelofibrosis. Leukemia 31, 2726–2731 (2017) [doi:10.1038/leu.2017.169](http://dx.doi.org/10.1038/leu.2017.169) . The MYSEC-PM model is now adopted in the NCCN Clinical Practice Guidelines in Oncology guidelines.
+- The [mdCATH](https://huggingface.co/datasets/compsciencelab/mdCATH) dataset
+  - An open dataset of all-atom molecular dynamics trajectories for 5,398 CATH protein domains, simulated at five temperatures. [Paper](https://doi.org/10.1038/s41597-024-04140-z)
+- The [SCov2-MD](http://www.scov2-md.org/) database
+  - Allowing the evolution-structure-dynamics-phenotype multidimensional analysis on SARS-CoV-2 genomes. Described in the paper [SCoV2-MD: a database for the dynamics of the SARS-CoV-2 proteome and variant impact predictions](https://doi.org/10.1093/nar/gkab977), published in Nucleic Acid Research as a Breakthrough article.
 - The [PYCV module for PLUMED 2](https://giorginolab.github.io/plumed2-pycv/)
   - Enables [PLUMED2](https://www.plumed.org/) Collective Variables (CVs) and arbitrary functions to be defined and auto-differentiated in the Python language. Described in the paper [PYCV: a PLUMED 2 Module Enabling the Rapid Prototyping of Collective Variables in Python](https://doi.org/10.21105/joss.01773)
 - Protein preparation for in silico experiments.
@@ -43,7 +45,7 @@ I've authored or contributed to a number of open-source software packages in the
 
 ### Past projects
 
-- Earlier research focused on the modelling of biomolecular recognition in [unstructured proteins](http://en.wikipedia.org/wiki/Intrinsically_unstructured_proteins), a wide class of proteins, whose detailed mechanisms of action are largely undetermined, and on [multi-scale simulation and prediction of the drug safety problems related with hERG](http://www.vph-noe.eu/exemplarprojects?start=4) within the Virtual Physiological Human Network of Excellence.
+- Earlier research focused on the modelling of biomolecular recognition in [unstructured proteins](http://en.wikipedia.org/wiki/Intrinsically_unstructured_proteins), a wide class of proteins, whose detailed mechanisms of action are largely undetermined, and on multi-scale simulation and prediction of the drug safety problems related with hERG within the Virtual Physiological Human Network of Excellence.
 - [MyHeart's NeuroRehab](http://www.labmedinfo.org/projects/myheart) project (2005-2008) The NR platform supports physicians and therapists in the delivery of personalized exercise plans. The recovery process supports both motor rehabilitation exercises, which are monitored with kinestetic strain-sensor garments, and cognitive rehabilitation. The project involved the creation of the mathematical models, refinement of algorithms, and development of hardware and software, up to the clinical tests of the prototypes. (See [video](http://vimeo.com/896814) and [publications]({{ '/publications/' | relative_url }}))
 - [AdaRTE dialog management](http://www.labmedinfo.org/projects/adarte) system for the medical domain (lead, 2002-2008) The proposal set forth in my PhD thesis (AdaRTE, a framework to support automated spoken dialogues in telemedicine) was developed into a system which is now used routinely in teaching, research, and to realize dialog systems used in the clinic. (See [publications]({{ '/publications/' | relative_url }}))
 - Formerly, I worked with the APE collaboration in Pisa and DESY-Zeuthen (Berlin), profiling the hardware and compilation chain of the ApeNEXT massively-parallel dedicated super computer during its development.

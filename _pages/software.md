@@ -10,10 +10,10 @@ I've authored or contributed to a number of open-source software packages in the
 
 - The [Dynamic Time Warping project](https://dynamictimewarping.github.io/)
   - Providing packages and information on an extensive array of [DTW-style algorithms in both R and Python](https://dynamictimewarping.github.io/). The DTW algorithm computes the time axis stretch which optimally maps one timeseries (query) onto another (reference). The packages provide the most complete, freely-available (GPL) implementation of Dynamic Time Warping-type (DTW) algorithms up to date. They are described in the (~1000 citations) paper [Computing and Visualizing Dynamic Time Warping Alignments in R: the dtw Package.](http://www.jstatsoft.org/v31/i07)
-- The [MYSEC-PM (Secondary Myelofibrosys Prognostic Model) model](http://www.mysec-pm.eu/).
-  - A model and the corresponding online calculator described in A clinical-molecular prognostic model to predict survival in patients with post polycythemia vera and post essential thrombocythemia myelofibrosis. Leukemia 31, 2726–2731 (2017) [doi:10.1038/leu.2017.169](http://dx.doi.org/10.1038/leu.2017.169) . The MYSEC-PM model is now adopted in the NCCN Clinical Practice Guidelines in Oncology guidelines.
 - The [mdCATH](https://huggingface.co/datasets/compsciencelab/mdCATH) dataset
   - An open dataset of all-atom molecular dynamics trajectories for 5,398 CATH protein domains, simulated at five temperatures. [Paper](https://doi.org/10.1038/s41597-024-04140-z)
+- The [MYSEC-PM (Secondary Myelofibrosys Prognostic Model) model](http://www.mysec-pm.eu/).
+  - A model and the corresponding online calculator described in A clinical-molecular prognostic model to predict survival in patients with post polycythemia vera and post essential thrombocythemia myelofibrosis. Leukemia 31, 2726–2731 (2017) [doi:10.1038/leu.2017.169](http://dx.doi.org/10.1038/leu.2017.169) . The MYSEC-PM model is now adopted in the NCCN Clinical Practice Guidelines in Oncology guidelines.
 - The [SCov2-MD](http://www.scov2-md.org/) database
   - Allowing the evolution-structure-dynamics-phenotype multidimensional analysis on SARS-CoV-2 genomes. Described in the paper [SCoV2-MD: a database for the dynamics of the SARS-CoV-2 proteome and variant impact predictions](https://doi.org/10.1093/nar/gkab977), published in Nucleic Acid Research as a Breakthrough article.
 - The [PYCV module for PLUMED 2](https://giorginolab.github.io/plumed2-pycv/)

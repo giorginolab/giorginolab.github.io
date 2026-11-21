@@ -1,53 +1,31 @@
 {% comment %} Montage of figures from our papers, shown on the home page. Images in assets/img/montage/. {% endcomment %}
+{% assign tile_sizes = '(max-width: 576px) calc(50vw - 20px), (max-width: 960px) calc(25vw - 14px), 226px' %}
+{% assign wide_sizes = '(max-width: 576px) calc(100vw - 32px), (max-width: 960px) calc(50vw - 20px), 460px' %}
 <div class="gl-montage">
-  <figure class="tile">
-    <img
-      src="{{ '/assets/img/montage/scov2-ml188-unbinding.jpg' | relative_url }}"
-      alt="Unbinding pathway of the ML188 inhibitor from the SARS-CoV-2 main protease"
-      loading="eager"
-    >
-    <figcaption>Drug unbinding pathways</figcaption>
-  </figure>
-  <figure class="tile">
-    <img
-      src="{{ '/assets/img/montage/mdcath-ss-melting.jpg' | relative_url }}"
-      alt="Loss of secondary structure over time at 413 K and 450 K for mainly-alpha and mainly-beta CATH domains (mdCATH)"
-      loading="eager"
-    >
-    <figcaption>mdCATH: thermal unfolding</figcaption>
-  </figure>
-  <figure class="tile">
-    <img
-      src="{{ '/assets/img/montage/mdid-rmsd-id.jpg' | relative_url }}"
-      alt="RMSD versus intrinsic dimension for folded and unfolded trajectories"
-      loading="eager"
-    >
-    <figcaption>Intrinsic dimension of dynamics</figcaption>
-  </figure>
-  <figure class="tile">
-    <img
-      src="{{ '/assets/img/montage/dtw-cost-matrix.jpg' | relative_url }}"
-      alt="Dynamic time warping: cumulative cost matrix and optimal alignment path between two time series"
-      loading="eager"
-    >
-    <figcaption>Dynamic time warping</figcaption>
-  </figure>
-  <figure class="wide">
-    <img
-      src="{{ '/assets/img/montage/cg-protein-g.jpg' | relative_url }}"
-      alt="Folding pathways of protein G from machine-learned coarse-grained simulations"
-      loading="lazy"
-    >
-    <figcaption>Machine-learned coarse-grained models</figcaption>
-  </figure>
-  <figure class="wide">
-    <img
-      src="{{ '/assets/img/montage/torchmd-fes.jpg' | relative_url }}"
-      alt="Free energy surfaces from all-atom and coarse-grained simulations"
-      loading="lazy"
-    >
-    <figcaption>Free energy landscapes</figcaption>
-  </figure>
+  {%
+    include figure.liquid path="assets/img/montage/scov2-ml188-unbinding.jpg" original_width=400 figure_class="tile" sizes=tile_sizes loading="eager"
+    alt="Unbinding pathway of the ML188 inhibitor from the SARS-CoV-2 main protease" caption="Drug unbinding pathways"
+  %}
+  {%
+    include figure.liquid path="assets/img/montage/mdcath-ss-melting.jpg" original_width=900 figure_class="tile" sizes=tile_sizes loading="eager"
+    alt="Loss of secondary structure over time at 413 K and 450 K for mainly-alpha and mainly-beta CATH domains (mdCATH)" caption="mdCATH: thermal unfolding"
+  %}
+  {%
+    include figure.liquid path="assets/img/montage/mdid-rmsd-id.jpg" original_width=700 figure_class="tile" sizes=tile_sizes loading="eager"
+    alt="RMSD versus intrinsic dimension for folded and unfolded trajectories" caption="Intrinsic dimension of dynamics"
+  %}
+  {%
+    include figure.liquid path="assets/img/montage/dtw-cost-matrix.jpg" original_width=800 figure_class="tile" sizes=tile_sizes loading="eager"
+    alt="Dynamic time warping: cumulative cost matrix and optimal alignment path between two time series" caption="Dynamic time warping"
+  %}
+  {%
+    include figure.liquid path="assets/img/montage/cg-protein-g.jpg" original_width=704 figure_class="wide" sizes=wide_sizes loading="lazy"
+    alt="Folding pathways of protein G from machine-learned coarse-grained simulations" caption="Machine-learned coarse-grained models"
+  %}
+  {%
+    include figure.liquid path="assets/img/montage/torchmd-fes.jpg" original_width=700 figure_class="wide" sizes=wide_sizes loading="lazy"
+    alt="Free energy surfaces from all-atom and coarse-grained simulations" caption="Free energy landscapes"
+  %}
 </div>
 <p class="gl-credits">
   Figures from our papers in <a href="https://doi.org/10.1093/nar/gkab977">NAR 2022</a> (CC BY-NC),

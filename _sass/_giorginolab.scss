@@ -433,6 +433,11 @@ html[data-theme="dark"] footer .gl-footer-row {
     border: 1px solid var(--gl-line);
     border-radius: 6px;
   }
+  picture {
+    display: block;
+    position: absolute;
+    inset: 0;
+  }
   img {
     display: block;
     width: 100%;
@@ -454,8 +459,10 @@ html[data-theme="dark"] footer .gl-footer-row {
     left: 0;
     right: 0;
     bottom: 0;
+    margin: 0;
     padding: 0.15rem 0.4rem;
     font-size: 0.7rem;
+    text-align: left;
     color: #fff;
     background: rgba(30, 40, 30, 0.72);
   }
@@ -469,15 +476,55 @@ html[data-theme="dark"] footer .gl-footer-row {
   margin-bottom: 1.5rem;
 }
 
+// Photos on the Group page.
+.gl-group-photo,
+.gl-group-portrait {
+  float: right;
+  max-width: 100%;
+  margin: 0 0 1rem 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ced9e5;
+  }
+}
+
+.gl-group-photo {
+  width: 360px;
+
+  @media (max-width: 576px) {
+    float: none;
+    margin-left: 0;
+  }
+}
+
+.gl-group-portrait {
+  clear: right;
+  width: 160px;
+
+  .caption {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+}
+
 // Research page (_pages/research.md): one row per theme, thumbnail on the left.
 .gl-theme {
   display: flex;
   gap: 1.25rem;
   align-items: flex-start;
   margin: 0 0 2rem;
-  > img {
+  > figure {
     flex: none;
     width: 180px;
+    margin: 0;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     background: #fff;
@@ -499,8 +546,10 @@ html[data-theme="dark"] footer .gl-footer-row {
   }
   @media (max-width: 576px) {
     flex-direction: column;
-    > img {
+    > figure {
       width: 100%;
+    }
+    img {
       aspect-ratio: 2 / 1;
     }
   }

@@ -97,6 +97,7 @@ include: ["_pages", "_scripts"]
 exclude:
   - bin/
   - AGENTS.md
+  - CHANGELOG.md
   - CLAUDE.md
   - README.md
   - Gemfile

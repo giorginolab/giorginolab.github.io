@@ -3,6 +3,9 @@
 {% assign ext = parts.last %}
 
 <figure
+  {% if include.figure_class %}
+    class="{{ include.figure_class }}"
+  {% endif %}
   {% if include.slot %}
     slot="{{ include.slot }}"
   {% endif %}
@@ -18,7 +21,18 @@
         <source
           class="responsive-img-srcset"
           {% if ext == 'gif' or ext == 'jpeg' or ext == 'jpg' or ext == 'png' or ext == 'tiff' %}
-            srcset="{% for i in site.imagemagick.widths %}{{ img_path | relative_url }}-{{ i }}.webp {{ i }}w,{% endfor %}"
+            srcset="
+              {%- for width in site.imagemagick.widths -%}
+                {%- assign candidate_width = width -%}
+                {%- if include.original_width -%}
+                  {%- comment -%}ImageMagick caps each variant at the original image width.{%- endcomment -%}
+                  {%- assign candidate_width = width | at_most: include.original_width -%}
+                {%- endif -%}
+                {%- unless forloop.first -%}, {% endunless -%}
+                {{- img_path | relative_url }}-{{ width }}.webp {{ candidate_width }}w
+                {%- if candidate_width == include.original_width -%}{%- break -%}{%- endif -%}
+              {%- endfor -%}
+            "
             type="image/webp"
           {% else %}
             srcset="{{ include.path | relative_url }}"

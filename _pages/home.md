@@ -8,6 +8,7 @@ subtitle: A Computational Biophysics Laboratory
 profile:
   align: right
   image: self-teide-small.jpg
+  original_width: 170
   image_circular: false
   more_info: >
     <p>The PI in 2004...</p>
@@ -26,13 +27,11 @@ latest_posts:
 
 Our research focuses on the application of computational models to biology and medicine, at various scales, to characterize genotype-phenotype and protein-drug interactions, making extensive use of molecular dynamics and statistical methods. Our background includes statistical physics, software engineering, and high-performance computational architectures.
 
-
 ## People
 
 The lab is led by [Toni Giorgino]({{ '/group/#principal-investigator' | relative_url }}), senior researcher at CNR-IBF. See [the group]({{ '/group/' | relative_url }}) for members and alumni, and [Join us]({{ '/join/' | relative_url }}) if you would like to join.
 
 We are part of the [Institute of Biophysics](https://www.ibf.cnr.it) of the Italian National Research Council (CNR-IBF), hosted by the [Department of Biosciences](https://www.dbs.unimi.it/ecm/home) of the University of Milan.
-
 
 <div style="clear: both"></div>
 
@@ -47,7 +46,6 @@ We are part of the [Institute of Biophysics](https://www.ibf.cnr.it) of the Ital
 - **Computational statistics.** Alignment methods for time series (dynamic time warping) and prognostic models for clinical outcomes. [JSS 2009](https://doi.org/10.18637/jss.v031.i07) · [Leukemia 2017](https://doi.org/10.1038/leu.2017.169)
 
 More on the [research page]({{ '/research/' | relative_url }}).
-
 
 ## Contact
 
